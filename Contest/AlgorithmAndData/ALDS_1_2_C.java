@@ -18,6 +18,7 @@ public class ALDS_1_2_C {
 		selectionSort(c2);
 		if(judge_stable(c, c2))System.out.println("Stable");
 		else System.out.println("Not stable");
+		sc.close();
 	}
 	
 	static void selectionSort(String[] a) {
