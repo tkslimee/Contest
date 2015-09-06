@@ -9,29 +9,29 @@ import java.util.StringTokenizer;
 
 public class ALDS_1_3_C2 {
 	public static void main(String[] args) throws IOException{
-		FileReader file = new FileReader("ALDS1_3_C-in10.txt");
-		Scanner sc = new Scanner(file);
-		int n = sc.nextInt();
-		DLinkedList2 list = new DLinkedList2();
-		for ( int i=0; i<n; i++ ) {
-			String call = sc.next();
-			if ( call.compareTo("insert") == 0 ) {
-				int call_num = sc.nextInt();
-				list.addFirst(call_num);
-			} else if ( call.compareTo("delete") == 0 ) {
-				int call_num = sc.nextInt();
-				list.delete(call_num);
-			} else if ( call.compareTo("deleteFirst") == 0 ) {
-				list.deleteFirst();
-			} else {
-				list.deleteLast();
-			}
-		}
-		System.out.println(list.ListtoString());
-		File outfile = new File("test.txt");
-		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(outfile)));
-		pw.println(list.ListtoString());
-		pw.close();
+//		FileReader file = new FileReader("ALDS1_3_C-in10.txt");
+//		Scanner sc = new Scanner(file);
+//		int n = sc.nextInt();
+//		DLinkedList2 list = new DLinkedList2();
+//		for ( int i=0; i<n; i++ ) {
+//			String call = sc.next();
+//			if ( call.compareTo("insert") == 0 ) {
+//				int call_num = sc.nextInt();
+//				list.addFirst(call_num);
+//			} else if ( call.compareTo("delete") == 0 ) {
+//				int call_num = sc.nextInt();
+//				list.delete(call_num);
+//			} else if ( call.compareTo("deleteFirst") == 0 ) {
+//				list.deleteFirst();
+//			} else {
+//				list.deleteLast();
+//			}
+//		}
+//		System.out.println(list.ListtoString());
+//		File outfile = new File("test.txt");
+//		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(outfile)));
+//		pw.println(list.ListtoString());
+//		pw.close();
 	}
 }
 
@@ -134,59 +134,59 @@ class DLinkedList2 {
 	}
 }
 
-class Scanner {
-    
-    private BufferedReader br;
-    private StringTokenizer tok;
-     
-    public Scanner(FileReader is) throws IOException{
-        br = new BufferedReader(is);
-        getLine();
-    }
-     
-    private void getLine() throws IOException{
-        while(tok == null || !hasNext()){
-            tok = new StringTokenizer(br.readLine());
-        }
-    }
-     
-    private boolean hasNext(){
-        return tok.hasMoreTokens();
-    }
-     
-    public String next() throws IOException{
-        if(hasNext()){
-            return tok.nextToken();
-        }else{
-            getLine();
-            return tok.nextToken();
-        }
-    }
-     
-    public int nextInt() throws IOException{
-        if(hasNext()){
-            return Integer.parseInt(tok.nextToken());
-        }else{
-            getLine();
-            return Integer.parseInt(tok.nextToken());
-        }
-    }
-     
-    public long nextLong() throws IOException{
-        if(hasNext()){
-            return Long.parseLong(tok.nextToken());
-        }else{
-            getLine();
-            return Long.parseLong(tok.nextToken());
-        }
-    }
-     
-    public double nextDouble() throws IOException{
-        if(hasNext()){
-            return Double.parseDouble(tok.nextToken());
-        }else{
-            getLine();
-            return Double.parseDouble(tok.nextToken());
-        }
-    }
-}
+//class Scanner {
+//    
+//    private BufferedReader br;
+//    private StringTokenizer tok;
+//     
+//    public Scanner(FileReader is) throws IOException{
+//        br = new BufferedReader(is);
+//        getLine();
+//    }
+//     
+//    private void getLine() throws IOException{
+//        while(tok == null || !hasNext()){
+//            tok = new StringTokenizer(br.readLine());
+//        }
+//    }
+//     
+//    private boolean hasNext(){
+//        return tok.hasMoreTokens();
+//    }
+//     
+//    public String next() throws IOException{
+//        if(hasNext()){
+//            return tok.nextToken();
+//        }else{
+//            getLine();
+//            return tok.nextToken();
+//        }
+//    }
+//     
+//    public int nextInt() throws IOException{
+//        if(hasNext()){
+//            return Integer.parseInt(tok.nextToken());
+//        }else{
+//            getLine();
+//            return Integer.parseInt(tok.nextToken());
+//        }
+//    }
+//     
+//    public long nextLong() throws IOException{
+//        if(hasNext()){
+//            return Long.parseLong(tok.nextToken());
+//        }else{
+//            getLine();
+//            return Long.parseLong(tok.nextToken());
+//        }
+//    }
+//     
+//    public double nextDouble() throws IOException{
+//        if(hasNext()){
+//            return Double.parseDouble(tok.nextToken());
+//        }else{
+//            getLine();
+//            return Double.parseDouble(tok.nextToken());
+//        }
+//    }
+//}
