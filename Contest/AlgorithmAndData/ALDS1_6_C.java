@@ -1,5 +1,6 @@
 import java.io.IOException;
 
+//quick sort
 public class ALDS1_6_C {
 	public static void main(String[] args) throws IOException{
 		Scanner sc = new Scanner(System.in);
