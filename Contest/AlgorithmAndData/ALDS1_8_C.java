@@ -1,6 +1,6 @@
 import java.io.IOException;
 
-public class ALDS1_8_A {
+public class ALDS1_8_C {
     public static void main(String[] args) throws IOException{
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -11,7 +11,15 @@ public class ALDS1_8_A {
         		int key = sc.nextInt();
         		BinarySearchTreeNode node = new BinarySearchTreeNode(key);
         		tree.insert(node);
-        	} else {
+        	} else if ( s.compareTo("find") == 0 ) {
+        		int key = sc.nextInt();
+        		if ( tree.find(key).getKey() != Integer.MIN_VALUE )System.out.println("yes");
+        		else System.out.println("no");
+        	} else if ( s.compareTo("delete") == 0 ) {
+        		int key = sc.nextInt();
+        		BinarySearchTreeNode dl = tree.find(key);
+        		tree.deleteNode(dl);
+        	} else if ( s.compareTo("print") == 0 ) {
         		tree.inOrder(tree.getRoot());
         		System.out.println("");
         		tree.preOrder(tree.getRoot());
