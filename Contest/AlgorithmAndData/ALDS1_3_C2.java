@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
-public class ALDS_1_3_C2 {
+public class ALDS1_3_C2 {
 	public static void main(String[] args) throws IOException{
 //		FileReader file = new FileReader("ALDS1_3_C-in10.txt");
 //		Scanner sc = new Scanner(file);

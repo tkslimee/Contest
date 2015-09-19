@@ -3,7 +3,7 @@ import java.util.Deque;
 import java.util.Scanner;
 
 
-public class ALDS_1_3_D {
+public class ALDS1_3_D {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String str = sc.next();

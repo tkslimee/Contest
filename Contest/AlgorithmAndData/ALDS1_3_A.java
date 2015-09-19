@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ALDS_1_3_A {
+public class ALDS1_3_A {
 	public static int top;
 	public static int[] S = new int[10000];
 

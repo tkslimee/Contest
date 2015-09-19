@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ALDS_1_3_B {
+public class ALDS1_3_B {
 	public static int head_time=1;
 	public static int tail_time=1;
 	public static int head_name=1;
