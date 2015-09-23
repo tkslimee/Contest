@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cat ~/contest/parts/submit_part1.txt > ~/contest/submit.java
-cat c:/users/takeru/git/Contest/Contest/AlgorithmAndData/$1.java | sed -e "s/$1/Main/" >> ~/contest/submit.java
-cat ~/contest/parts/submit_part2.txt >> ~/contest/submit.java
+cat ./parts/submit_part1.txt > ./submit.java
+cat ../AlgorithmAndData/$1.java | sed -e "s/$1/Main/" >> ./submit.java
+cat ./parts/submit_part2.txt >> ./submit.java
 
