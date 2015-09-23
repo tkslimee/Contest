@@ -1,6 +1,7 @@
 import java.io.IOException;
 import java.util.Arrays;
 
+// フィボナッチ(DP)
 public class ALDS1_10_A {
 	public static int[] dp;
 	public static int[] dp2;
